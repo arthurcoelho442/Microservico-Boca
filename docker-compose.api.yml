@@ -27,8 +27,9 @@ services:
   boca-pgadmin4:
     image: dpage/pgadmin4
     restart: unless-stopped
+    env_file: .env
     ports:
-    - 5050:80
+    - ${PORT_PGADMIN}:80
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
@@ -39,8 +40,17 @@ services:
     image: microserviceboca:latest
     build: 
       context: .
-      dockerfile: boca-docker/docker/dev/api/Dockerfile
+      dockerfile: api/Dockerfile
     ports:
-      - 4040:8080
+      - ${PORT_API}:8080
+    env_file: .env
+    environment:
+      NAME_DB: ${NAME_DB}
+      USER_DB: ${USER_DB}
+      PASSWORD_DB: ${PASSWORD_DB}
+      HOST_DB: ${HOST_DB}
+      PORT_DB: ${PORT_DB}
+      AUTOCOMIT_DB: ${AUTOCOMIT_DB}
+      SCHEMA: ${SCHEMA}
     networks:
       - boca
