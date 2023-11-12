@@ -25,24 +25,26 @@ services:
 
     # web app
     boca-web:
+        env_file: .env
         environment:
             # database configuration
             # privileged user password
-            - BOCA_DB_SUPER_PASSWORD=postgres
+            - BOCA_DB_SUPER_PASSWORD=${PASSWORD_DB}
         ports: 
-            - 8000:80
+            - ${PORT_BOCA}:80
         networks:
             - boca
         
     # database
     boca-db:
         image: postgres:14-alpine
+        env_file: .env
         environment:
             # database configuration
             # privileged user password
-            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_PASSWORD=${PASSWORD_DB}
         ports: 
-            - 5432:5432
+            - ${PORT_DB}:5432
         networks:
             - boca
 
