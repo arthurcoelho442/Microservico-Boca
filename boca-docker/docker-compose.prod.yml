@@ -41,6 +41,8 @@ services:
                     memory: 512M
             restart_policy:
                 condition: on-failure
+        networks:
+            - boca
 
     # database
     boca-db:
@@ -60,3 +62,5 @@ services:
                 condition: on-failure
         volumes:
             - ./init:/docker-entrypoint-initdb.d
+        networks:
+            - boca
