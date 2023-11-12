@@ -10,7 +10,7 @@ CREATE TABLE tagtable(
 -- Cadastra uma nova tag associada à competição dada pelo id_c
 INSERT INTO tagtable(tagnumber, tagname, contestnumber)
 VALUES
-(3,'hard',1);
+(1,'hard',2);
 
 SELECT *
 FROM tagtable;
@@ -36,6 +36,7 @@ WHERE contesttable.contestnumber = 2 AND tagnumber = 1;
 UPDATE tagtable 
 SET tagname = 'medio'
 WHERE contestnumber = 2 AND tagnumber = 1;
+
 SELECT *
 FROM tagtable;
 
