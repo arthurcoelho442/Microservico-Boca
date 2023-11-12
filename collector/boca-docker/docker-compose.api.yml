@@ -22,24 +22,25 @@
 version: '3.8'
 
 services:
-
-    # web app
-    boca-web:
-        environment:
-            # database configuration
-            # privileged user password
-            - BOCA_DB_SUPER_PASSWORD=superpass
-        ports: 
-            - 8000:80
-
-    # online judge
-    boca-jail:
-        privileged: true
-        
-    # database
-    boca-db:
-        image: postgres:14-alpine
-        environment:
-            # database configuration
-            # privileged user password
-            - POSTGRES_PASSWORD=superpass
+  # pgAdmin4 
+  # https://www.pgadmin.org/docs/pgadmin4/development/container_deployment.html
+  boca-pgadmin4:
+    image: dpage/pgadmin4
+    restart: unless-stopped
+    ports:
+    - 5050:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    networks:
+      - boca
+  
+  boca-api:
+    image: microservicoboca:latest
+    build: 
+      context: .
+      dockerfile: docker/dev/api/Dockerfile
+    ports:
+      - 49160:8080
+    networks:
+      - boca

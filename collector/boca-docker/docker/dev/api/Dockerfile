@@ -2,7 +2,7 @@
 FROM node:14
 
 # Copia o diretório para dentro do container
-COPY hom* . /app
+COPY ./docker/dev/api/ ./app
 
 # Define o diretório de trabalho no container
 WORKDIR /app
