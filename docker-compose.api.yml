@@ -36,11 +36,11 @@ services:
       - boca
   
   boca-api:
-    image: microservicoboca:latest
+    image: microserviceboca:latest
     build: 
       context: .
-      dockerfile: docker/dev/api/Dockerfile
+      dockerfile: boca-docker/docker/dev/api/Dockerfile
     ports:
-      - 49160:8080
+      - 4040:8080
     networks:
       - boca
