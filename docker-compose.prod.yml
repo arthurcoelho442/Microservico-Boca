@@ -27,7 +27,7 @@ services:
         image: ghcr.io/joaofazolo/boca-docker/boca-web:latest
         env_file: .env
         depends_on:
-            - ${NAME_DB}
+            - boca-db
         deploy:
             mode: global
             placement:
