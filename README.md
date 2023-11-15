@@ -8,6 +8,7 @@
 - [Mode de Execução](#Mode-de-Execucao)
   - [Configuração](#Configuracao)
   - [Execução](#Execucao)
+  - [Visualização](#Visualizacao)
 - [Funcionamento](#Funcionamento)
 
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
@@ -32,7 +33,7 @@ neste arquivo temos a configuração das portas em que os conteiners seram execu
 
 - De um click duplo no arquivo **run.bat**
 
-> Linux
+> **Linux**
 
 **Atualize o sistema**
 ```
@@ -52,6 +53,22 @@ caso prefira execute o comando diretamente
 ```
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml -f docker-compose.api.yml up -d --build
 ```
+
+### <a name=“Visualizacao”><a/>Visualização
+Para visualização do banco de dados, foi utilizado ao invez do adminer, o pgadmin que é uma ferramenta gráfica de administração para o banco de dados PostgreSQL. Ele oferece uma interface visual para gerenciar e interagir com o PostgreSQL, incluindo recursos como navegação em árvore, edição SQL, gerenciamento de usuários e monitoramento de desempenho.
+
+Para iniciar o pgadmin acesse a url **localhost:5050** e faça o acesso com as credenciais abaixo:
+- login: admin@admin.com
+- senha: admin
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/1ec3213f-1536-4b50-84cb-48be7fe17226" width=550> </div>
+
+Siga os passos abaixo para registrar o servidor
+
+> Click em add new serve | Defina um nome para o servidor
+
+|<img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/751ee45e-04c9-4641-a85f-3f656d3bba9e" width=650><br> | <img  src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/c8c85ac1-6237-4447-aa51-6f0d36f8fa10" width=500><br> |
+| :---: | :---: |
 
 # <a name=“Funcionamento”><a/>Funcionamento
 
