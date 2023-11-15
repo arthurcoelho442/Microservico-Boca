@@ -65,7 +65,7 @@ Para iniciar o pgadmin acesse a url **localhost:5050** e faça o acesso com as c
 
 Siga os passos abaixo para registrar o servidor
 
-> :::: **_Click em add new serve_** :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: **_Defina um nome para o servidor_**:::::::::::::::::::::::::::::::::::::::::::::::
+> ::::**_Click em add new serve_** ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: **_Defina um nome para o servidor_**::::::::::::::::::::::::::::::::::::::::
 
 |<img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/751ee45e-04c9-4641-a85f-3f656d3bba9e" width=650><br> | <img  src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/c8c85ac1-6237-4447-aa51-6f0d36f8fa10" width=500><br> |
 | :---: | :---: |
