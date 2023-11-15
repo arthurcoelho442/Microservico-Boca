@@ -9,6 +9,7 @@
   - [Configuração](#Configuracao)
   - [Execução](#Execucao)
   - [Visualização](#Visualizacao)
+  - [Utilização](#Utilizacao)
 - [Funcionamento](#Funcionamento)
 
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
@@ -74,10 +75,15 @@ Siga os passos abaixo para registrar o servidor
 
 <div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/cca6eeb1-0e0a-448c-aee4-f5fcf22abd53" width=450> </div>
 
+### <a name=“Utilizacao”><a/>Utilização
+
+Para se utilizar a API, você pode fazer uso de um softwar como Postman que é uma plataforma de colaboração para o desenvolvimento de APIs, ou um codigo em python para fazer as requisições. Neste repositorio você pode encontrar um arquivo teste.py, nele temos exemplos de requisições para a api.
+
 # <a name=“Funcionamento”><a/>Funcionamento
 
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
 | :---: | :---: |
 
+com isso você já é capaz de acessar as tabelas do banco de dados.
 </div>
