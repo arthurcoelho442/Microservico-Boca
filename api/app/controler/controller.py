@@ -129,6 +129,9 @@ def get_tag_id_c_for_id_t(entityType, entityId, tagId):
     
     tag = cursor.fetchone() # type:ignore
     
+    if tag == None:
+        return jsonify("Esta tag nao existe")
+    
     tags ={
         "id": tag[0],       # type:ignore
         "name": name,
@@ -146,27 +149,44 @@ def get_tag_id_c_for_id_t(entityType, entityId, tagId):
     }
     return jsonify(dic)
 
-@api.route('/api/<string:entityType>/<int:id_c>/tag/<int:id_t>', methods=['PUT'])   #  Atualiza a tag dada pelo id_t no entityType id_c
-def update_tag_id_c_for_id_t(entityType, id_c, id_t):                      
+@api.route('/api/<string:entityType>/<int:entityId>/tag/<int:tagId>', methods=['PUT'])   #  Atualiza a tag dada pelo id_t no entityType id_c
+def update_tag_id_c_for_id_t(entityType, entityId, tagId):                      
     date = request.get_json()
     factory = ConnectionFactory.connect()
-    if factory == None or date is  None:
-        return jsonify("Erro")
+    
+    if date is None:
+       return jsonify("Falta o envio do valor atualizado da tag")
+    
+    if factory == None:
+        return jsonify("Erro - conexao com banco")
     
     cursor = factory.cursor()
     
     sql = """
+        SELECT {0}name
+        FROM {0}table
+        WHERE {0}table.{0}number = {1}
+    """.format(entityType, entityId)
+    
+    cursor.execute(sql)
+    
+    try:
+        name = cursor.fetchone()[0] # type:ignore
+    except:
+       return jsonify("Sem registo na {}table".format(entityType))
+   
+    sql = """
         UPDATE tagtable 
-        SET tagname = '{}'
-        WHERE {}number = {} AND tagnumber = {}
-    """.format(entityType, date["name"], id_c, id_t)
+        SET value = '{}'
+        WHERE name = '{}' AND id = {}
+    """.format(date["value"], name, tagId)
     
     cursor.execute(sql)
     
     return jsonify("Atualizado")
 
-@api.route('/api/<string:entityType>/<int:id_c>/tag/<int:id_t>', methods=['DELETE'])  #  Remove a tag dada pelo id_t no entityType id_c
-def dalete_tag_id_c_for_id_t(entityType, id_c, id_t):                      
+@api.route('/api/<string:entityType>/<int:entityId>/tag/<int:tagId>', methods=['DELETE'])  #  Remove a tag dada pelo id_t no entityType id_c
+def dalete_tag_id_c_for_id_t(entityType, entityId, tagId):                      
     factory = ConnectionFactory.connect()
     if factory == None:
         return jsonify("Erro")
@@ -174,10 +194,26 @@ def dalete_tag_id_c_for_id_t(entityType, id_c, id_t):
     cursor = factory.cursor()
     
     sql = """
-        DELETE FROM tagtable
-        WHERE {}number = {} and tagnumber = {}
-    """.format(entityType, id_c, id_t)
+        SELECT {0}name
+        FROM {0}table
+        WHERE {0}table.{0}number = {1}
+    """.format(entityType, entityId)
     
     cursor.execute(sql)
     
+    try:
+        name = cursor.fetchone()[0] # type:ignore
+    except:
+       return jsonify("Sem registo na {}table".format(entityType))
+    
+    sql = """
+        DELETE FROM tagtable
+        WHERE id = {} and name = '{}'
+    """.format(tagId, name)
+    
+    cursor.execute(sql)
+    
+    if cursor.rowcount == 0:
+        return jsonify("Tag pertencente a outra entidade ou nao existe")
+        
     return jsonify("Deletado")
