@@ -12,16 +12,27 @@
 Consiste no desenvolvimento de parte de um microsserviço de back-end que permite a aplicações clientes (por ex., front-end ou Application Programming Interface client) gerenciar turmas e objetos de aprendizagem armazenados em um SGBD através de uma API REST1. Este trabalho oportuniza a prática dos conhecimentos obtidos na disciplina com tecnologias atuais e em um sistema real, o ambiente BOCA (BOCA Online Contest Administrator), o qual é usado para gerenciar competições da Maratona de Programação da SBC2 e do Topcom3 e, mais recentemente, como ferramenta de apoio em disciplinas de programação oferecidas pelo Departamento de Informática (DI) da Ufes.
 
 # <a name=“Mode-de-Execucao”><a/>Mode de Execução
+No diretorio raiz do repositorio acesse o arquivo **.env**
+
+<div><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/7d5d1d91-30d5-4243-a67b-0cefc2507b23" width=250> </div>
+
+neste arquivo temos a configuração das portas em que os conteiners seram executados, certifique de parar os containers do seu compudator ou trocar as portas de acordo com a sua necessidade.
+
 > **Windows**
-Intale o [pip](https://pip.pypa.io/en/stable/installation/)
+
+**Intale o pip**
+- https://pip.pypa.io/en/stable/installation/
+
+**Rode o script**
+
+- De um click duplo no arquivo **run.bat**
 
 > Linux
-**Atualização do sistema**
+
+**Atualize o sistema**
 ```
 sudo apt-get update && apt-get upgrade -y
 ```
-**Rode o script**
-de um click duplo no arquivo **run.bat**
 
 **Instale o pip**
 ```
