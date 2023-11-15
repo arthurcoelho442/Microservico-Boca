@@ -1,13 +1,12 @@
 \connect bocadb;
 
-CREATE TABLE tagtable(
-	tagnumber bigint NOT NULL,
-	tagname text,
-	contestnumber integer,
-	PRIMARY KEY (tagnumber),
-	FOREIGN KEY (contestnumber) REFERENCES contesttable (contestnumber)
+CREATE TABLE public.tagtable
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+    name text NOT NULL,
+    value text NOT NULL,
+    PRIMARY KEY (id)
 );
 
-INSERT INTO tagtable(tagnumber, tagname, contestnumber)
-VALUES
-(1,'hard',2);
+ALTER TABLE IF EXISTS public.tagtable
+    OWNER to postgres;
