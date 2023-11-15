@@ -70,6 +70,10 @@ Siga os passos abaixo para registrar o servidor
 |<img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/751ee45e-04c9-4641-a85f-3f656d3bba9e" width=650><br> | <img  src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/c8c85ac1-6237-4447-aa51-6f0d36f8fa10" width=500><br> |
 | :---: | :---: |
 
+> Acesse a aba Connection e finalize a configuração do servidor com os dados abaixo:
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/cca6eeb1-0e0a-448c-aee4-f5fcf22abd53" width=450> </div>
+
 # <a name=“Funcionamento”><a/>Funcionamento
 
 # Autores
