@@ -117,7 +117,7 @@ O código responsável pelo gerenciamento das URLs está organizado no arquivo c
 
 ### <a name=“Utilizacao”><a/>Utilização 
 
-Para utilizar a API, você pode empregar ferramentas como o Postman, uma plataforma de colaboração para o desenvolvimento de APIs, ou código em Python para realizar requisições. No repositório, você encontrará um arquivo **teste.py** com exemplos de requisições para a API.
+Para utilizar a API, você pode empregar ferramentas como o Postman, uma plataforma de colaboração para o desenvolvimento de APIs, ou desenvolver um código em Python para realizar as requisições. No repositório, você encontrará um arquivo **teste.py** com exemplos de requisições para a API.
 
 A seguir, apresentamos alguns exemplos de chamadas de URL realizadas via `Postman`:
 
