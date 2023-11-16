@@ -149,6 +149,7 @@ Exibe apenas a tag selecionada pelo id.
 Altera a tag dada pelo tagID referente à tag da tabela tabtable para o contestnumber = 2. A alteração muda o valor de **"necessita revisão"** para **"revisado"**.
 
 - Execução do GET com presença do tagID após o POST para listar a tag modificada
+  
   ![GET após PUT](https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/01e082a2-84f7-42ff-b81d-d87ac9498793)
 
 Exibe apenas a tag selecionada pelo id, para denotar a alteração feita.
