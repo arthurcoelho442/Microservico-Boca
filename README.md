@@ -25,7 +25,7 @@ No diretório raiz do repositório, acesse o arquivo **.env**
 
 Neste arquivo, temos a configuração das portas em que os contêineres serão executados. Certifique-se de parar os contêineres do seu computador ou trocar as portas de acordo com a sua necessidade.
 
-### <a name=“Execucao”><a/>Execução
+### <a name=“Execucao”><a/>Execucao
 > **Windows**
 
 **Intale o pip**
@@ -56,7 +56,7 @@ Caso prefira, execute o comando diretamente
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml -f docker-compose.api.yml up -d --build
 ```
 
-### <a name=“Visualizacao”><a/>Visualização
+### <a name=“Visualizacao”><a/>Visualizacao
 Para visualização do banco de dados, foi utilizado ao invés do Adminer, o pgAdmin, que é uma ferramenta gráfica de administração para o banco de dados PostgreSQL. Ele oferece uma interface visual para gerenciar e interagir com o PostgreSQL, incluindo recursos como navegação em árvore, edição SQL, gerenciamento de usuários e monitoramento de desempenho.
 
 Para iniciar o pgAdmin, acesse a URL **localhost:5050** e faça o acesso com as credenciais abaixo:
