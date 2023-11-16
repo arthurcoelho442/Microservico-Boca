@@ -9,8 +9,8 @@
   - [Configuração](#Configuracao)
   - [Execução](#Execucao)
   - [Visualização](#Visualizacao)
-  - [Utilização](#Utilizacao)
 - [Funcionamento](#Funcionamento)
+  - [Utilização](#Utilizacao)
 
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
 Consiste no desenvolvimento de parte de um microsserviço de back-end que permite a aplicações clientes (por ex., front-end ou Application Programming Interface client) gerenciar turmas e objetos de aprendizagem armazenados em um SGBD através de uma API REST1. Este trabalho oportuniza a prática dos conhecimentos obtidos na disciplina com tecnologias atuais e em um sistema real, o ambiente BOCA (BOCA Online Contest Administrator), o qual é usado para gerenciar competições da Maratona de Programação da SBC2 e do Topcom3 e, mais recentemente, como ferramenta de apoio em disciplinas de programação oferecidas pelo Departamento de Informática (DI) da Ufes.
@@ -75,9 +75,6 @@ Siga os passos abaixo para registrar o servidor
 
 <div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/cca6eeb1-0e0a-448c-aee4-f5fcf22abd53" width=450> </div>
 
-### <a name=“Utilizacao”><a/>Utilização
-
-Para se utilizar a API, você pode fazer uso de um softwar como Postman que é uma plataforma de colaboração para o desenvolvimento de APIs, ou um codigo em python para fazer as requisições. Neste repositorio você pode encontrar um arquivo **teste.py**, nele temos exemplos de requisições para a api.
 
 # <a name=“Funcionamento”><a/>Funcionamento
 
@@ -95,13 +92,13 @@ com esta tabela é possivel relacionar a coluna name da tag com o respectivo nam
 
 foram desenvolvidas ao todo 5 urls dinamicas como vistas logo abaixo:
 
-| Endpoint                                                           | Método  | Funcionalidade                                              |
-| -------------------------------------------------------------------| ------  | -----------------------------------------------------       |
-| localhost:4040/api/**`entityType`**/**`entityId`**/tag             | GET     | Lista as tags associadas à competição dada pelo id_c        |
-| localhost:4040/api/**`entityType`**/**`entityId`**/tag             | POST    | Cadastra uma nova tag associada à competição dada pelo id_c |
-| localhost:4040/api/**`entityType`**/**`entityId`**/tag/**`tagId`** | GET     | Mostra a tag dada pelo id_t no contest id_c                 |
-| localhost:4040/api/**`entityType`**/**`entityId`**/tag/**`tagId`** | PUT     | Atualiza a tag dada pelo id_t no contest id_c               |
-| localhost:4040/api/**`entityType`**/**`entityId`**/tag/**`tagId`** | DELETE  | Remove a tag dada pelo id_t no contest id_c                 |
+| Endpoint                                                               | Método  | Funcionalidade                                                       |
+| ---------------------------------------------------------------------- | ------  | -------------------------------------------------------------------- |
+| localhost:4040/api/**`entityType`**/**`entitynumber`**/tag             | GET     | Lista as tags associadas à entitytable dada pelo entitynumber        |
+| localhost:4040/api/**`entityType`**/**`entitynumber`**/tag             | POST    | Cadastra uma nova tag associada à entitytable dada pelo entitynumber |
+| localhost:4040/api/**`entityType`**/**`entitynumber`**/tag/**`tagId`** | GET     | Mostra a tag dada pelo tagId no entitytable entitynumber             |
+| localhost:4040/api/**`entityType`**/**`entitynumber`**/tag/**`tagId`** | PUT     | Atualiza a tag dada pelo tagId no entitytable entitynumber           |
+| localhost:4040/api/**`entityType`**/**`entitynumber`**/tag/**`tagId`** | DELETE  | Remove a tag dada pelo tagId no entitytable entitynumber             |
 
 Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId` e `tagId`.
 
@@ -110,6 +107,10 @@ Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId`
 - `entityId`: Representa o ID da tupla na tabela da entidade. Por exemplo, se entityId for 2, está referenciando o usuário cadastrado na tabela usertable com usernumber igual a 2.
 
 - `tagId`: Faz referência a uma tag na tabela tagtable.
+
+### <a name=“Utilizacao”><a/>Utilização
+
+Para se utilizar a API, você pode fazer uso de um softwar como Postman que é uma plataforma de colaboração para o desenvolvimento de APIs, ou um codigo em python para fazer as requisições. Neste repositorio você pode encontrar um arquivo **teste.py**, nele temos exemplos de requisições para a api.
 
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
