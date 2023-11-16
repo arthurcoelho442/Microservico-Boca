@@ -10,6 +10,7 @@
   - [Execução](#Execucao)
   - [Visualização](#Visualizacao)
 - [Funcionamento](#Funcionamento)
+  - [API](#API)
   - [Utilização](#Utilizacao)
 
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
@@ -108,7 +109,13 @@ Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId`
 
 - `tagId`: Faz referência a uma tag na tabela tagtable.
 
-### Utilização
+### <a name=“API”><a/>API 
+A API desenvolvida foi construída utilizando o Flask em Python, um framework web leve que se destaca por sua simplicidade e extensibilidade. Classificado como um microframework, o Flask não impõe a necessidade de ferramentas ou bibliotecas específicas, mantendo um núcleo simples, porém flexível.
+
+<div align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/c4306ec5-cfcb-4af5-95c9-47ab9be87709" width=450></div>
+O código responsável pelo gerenciamento das URLs está organizado no arquivo controller.py, onde ocorre a interação com o banco de dados e a definição das rotas. Além disso, encontramos mais dois arquivos: run.py, encarregado de iniciar a API, rodando o codigo do controller via flask, e manufactures_connection, que realiza a conexão e configuração do banco de dados por meio das variáveis de ambiente.
+
+### <a name=“Utilizacao”><a/>Utilização 
 
 Para utilizar a API, você pode empregar ferramentas como o Postman, uma plataforma de colaboração para o desenvolvimento de APIs, ou código em Python para realizar requisições. No repositório, você encontrará um arquivo **teste.py** com exemplos de requisições para a API.
 
