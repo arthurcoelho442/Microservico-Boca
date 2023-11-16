@@ -157,7 +157,7 @@ Exibe apenas a tag selecionada pelo id.
   
   ![PUT](https://private-user-images.githubusercontent.com/56831082/283303192-eee856fe-9c3d-44fe-81bf-16a1c4b8e112.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDAxMDMwMzksIm5iZiI6MTcwMDEwMjczOSwicGF0aCI6Ii81NjgzMTA4Mi8yODMzMDMxOTItZWVlODU2ZmUtOWMzZC00NGZlLTgxYmYtMTZhMWM0YjhlMTEyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTE2VDAyNDUzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRjZWQ1N2NmNzcwYTNkYzBlNmQwYzU2YjQ1Yjk0MDZjYTE4YjdiYWQwZDhkYmU0YjgwNTJiYzA2NzY1N2Y2NmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.B5EWDUy9mEJ8Ho4Mb8Y1RvP7SOabwd9bl4-XHxbnMQ8)
 
-Altera a tag dada pelo tagID referente à tag da tabela tabtable para o contestnumber = 2. A alteração muda o valor de **"necessita revisão"** para **"revisado"**.
+Altera a tag dada pelo tagID referente à tag da tabela tabtable para o contestnumber igual a 2. A alteração muda o valor de **"necessita revisão"** para **"revisado"**.
 
 - Execução do GET com presença do tagID após o POST para listar a tag modificada
   
