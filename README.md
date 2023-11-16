@@ -6,7 +6,7 @@
 # Sumario
 - [Objetivo do Trabalho](#Objetivo-do-Trabalho)
 - [Mode de Execucao](#Mode-de-Execucao)
-  - [Configuracao](#Configuracao)
+  - [Configuração](#Configuracao)
   - [Execução](#Execucao)
   - [Visualização](#Visualizacao)
 - [Funcionamento](#Funcionamento)
