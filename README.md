@@ -112,6 +112,66 @@ Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId`
 
 Para se utilizar a API, você pode fazer uso de um software como Postman, que é uma plataforma de colaboração para o desenvolvimento de APIs, ou um código em Python para fazer as requisições. Neste repositório, você pode encontrar um arquivo **teste.py**, nele temos exemplos de requisições para a API.
 
+Logo abaixo temos alguns exemplos de chamas da URL, feitos via `Postman`:
+
+> **GET**
+
+- Execução do GET
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/fa3b2476-35c6-4ea4-8e07-59d97b36466c" width=600> </div>
+
+Esta requisição retorna todas as tags associadas a tabela contest que possue o constantnumbe = 2.
+
+> **POST**
+
+ - Execução do POST
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/f1860c35-58cd-47b3-8763-b59afe45042e" width=600> </div>
+
+Esta requisição faz o registro de uma nova tag no tabtable para o contest com constantnumber = 2. 
+
+- Execução do GET após o POST para listar tags
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/0a7842bb-9435-4690-b85a-a30669a29ba1" width=600> </div>
+
+Mostra a alteração na lista de tags do contest
+
+> **GET**
+
+- Execução do GET com presença do tagID
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/187e20cd-fe4e-423b-86ab-90695fb51e06" width=600> </div>
+
+Exibe apenas a tag selecionada pelo id.
+
+> **PUT**
+
+- Executa PUT
+  
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/eee856fe-9c3d-44fe-81bf-16a1c4b8e112" width=600> </div>
+
+Altera a tag dada pelo tagID referente a tag da tabela tabtable pelo contestnumber = 2, a alteração muda o valor de **"necessita revisão"** para **"revisado"**.
+
+- Execução do GET com presença do tagID após o POST para listar a tag modificada
+  
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/01e082a2-84f7-42ff-b81d-d87ac9498793" width=600> </div>
+
+Exibe apenas a tag selecionada pelo id, para denotar a alteração feita.
+
+> **DELETE**
+
+- Execução do DELETE
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/b8065155-4a4a-47fc-9a1f-68cc27af56ab" width=600> </div>
+
+Remove a tag da tabela tagtable.
+
+> **Extra**
+
+- Experimente remover tags ao qual o entitynumber da tabela entity não exista
+- Experimente lista tags que não foram registradas
+- Experimente alterar uma tag inesistente
+- Esperimente fazer POST ou PUT sem os dados do JSON
+  
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
 | :---: | :---: |
