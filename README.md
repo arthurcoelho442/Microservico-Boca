@@ -77,13 +77,21 @@ Siga os passos abaixo para registrar o servidor
 
 ### <a name=“Utilizacao”><a/>Utilização
 
-Para se utilizar a API, você pode fazer uso de um softwar como Postman que é uma plataforma de colaboração para o desenvolvimento de APIs, ou um codigo em python para fazer as requisições. Neste repositorio você pode encontrar um arquivo teste.py, nele temos exemplos de requisições para a api.
+Para se utilizar a API, você pode fazer uso de um softwar como Postman que é uma plataforma de colaboração para o desenvolvimento de APIs, ou um codigo em python para fazer as requisições. Neste repositorio você pode encontrar um arquivo **teste.py**, nele temos exemplos de requisições para a api.
 
 # <a name=“Funcionamento”><a/>Funcionamento
+
+O desenvolvimento do projeto se deu na criação de uma nova tabela tagtable para gerenciar tags para entidades do BOCA. Onde uma tag é uma espécie de rótulo que pode ser atribuído a qualquer entidade, para permite categorizar os recursos.
+
+Foi elaborado um conjunto de urls a fim de se fazer a manipulação das tags, a elaboração da tabela pode ser observada pelo diagrama-ER conseitual abaixo:
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/f583658d-f8af-42b3-9c88-c71588b064aa" width=600> </div>
+
+Contudo foi desenvolvida a seguinte tabela: 
+
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/54479ee9-e14d-45ed-9508-a2160d2e862a" width=600> </div>
 
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
 | :---: | :---: |
-
-com isso você já é capaz de acessar as tabelas do banco de dados.
 </div>
