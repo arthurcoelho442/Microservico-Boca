@@ -117,6 +117,7 @@ A seguir, apresentamos alguns exemplos de chamadas de URL realizadas via `Postma
 > **GET**
 
 - Execução do GET
+  
   ![GET](https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/fa3b2476-35c6-4ea4-8e07-59d97b36466c)
 
 Esta requisição retorna todas as tags associadas à tabela contest que possui constantnumbe = 2.
@@ -124,6 +125,7 @@ Esta requisição retorna todas as tags associadas à tabela contest que possui 
 > **POST**
 
  - Execução do POST
+   
    ![POST](https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/f1860c35-58cd-47b3-8763-b59afe45042e)
 
 Esta requisição registra uma nova tag na tabela tabtable para o contest com constantnumber = 2.
@@ -137,6 +139,7 @@ Mostra a alteração na lista de tags do contest.
 > **GET**
 
 - Execução do GET com presença do tagID
+  
   ![GET com tagID](https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/187e20cd-fe4e-423b-86ab-90695fb51e06)
 
 Exibe apenas a tag selecionada pelo id.
@@ -144,6 +147,7 @@ Exibe apenas a tag selecionada pelo id.
 > **PUT**
 
 - Executa PUT
+  
   ![PUT](https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/eee856fe-9c3d-44fe-81bf-16a1c4b8e112)
 
 Altera a tag dada pelo tagID referente à tag da tabela tabtable para o contestnumber = 2. A alteração muda o valor de **"necessita revisão"** para **"revisado"**.
@@ -157,6 +161,7 @@ Exibe apenas a tag selecionada pelo id, para denotar a alteração feita.
 > **DELETE**
 
 - Execução do DELETE
+  
   ![DELETE](https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/b8065155-4a4a-47fc-9a1f-68cc27af56ab)
 
 Remove a tag da tabela tagtable.
