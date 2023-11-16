@@ -91,6 +91,26 @@ Contudo foi desenvolvida a seguinte tabela:
 
 <div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/54479ee9-e14d-45ed-9508-a2160d2e862a" width=200> </div>
 
+com esta tabela é possivel relacionar a coluna name da tag com o respectivo name das tabelas (contest, lang, problem, site e user)
+
+foram desenvolvidas ao todo 5 urls dinamicas como vistas logo abaixo:
+
+| Endpoint                                                     | Método  | Funcionalidade                                              |
+| ---------------------------------------------                | ------  | -----------------------------------------------------       |
+| localhost:4040/api/**entityType**/**entityId**/tag           | GET     | Lista as tags associadas à competição dada pelo id_c        |
+| localhost:4040/api/**entityType**/**entityId**/tag           | POST    | Cadastra uma nova tag associada à competição dada pelo id_c |
+| localhost:4040/api/**entityType**/**entityId**/tag/**tagId** | GET     | Mostra a tag dada pelo id_t no contest id_c                 |
+| localhost:4040/api/**entityType**/**entityId**/tag/**tagId** | PUT     | Atualiza a tag dada pelo id_t no contest id_c               |
+| localhost:4040/api/**entityType**/**entityId**/tag/**tagId** | DELETE  | Remove a tag dada pelo id_t no contest id_c                 |
+
+Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId` e `tagId`.
+
+- `entityType`: Refere-se à entidade/tabela à qual a tag está associada. Por exemplo, se entityType for "user", isso se relaciona com a tabela usertable, que é a tabela referente aos usuários do sistema.
+
+- `entityId`: Representa o ID da tupla na tabela da entidade. Por exemplo, se entityId for 2, está referenciando o usuário cadastrado na tabela usertable com usernumber igual a 2.
+
+- `tagId`: Faz referência a uma tag na tabela tagtable.
+
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
 | :---: | :---: |
