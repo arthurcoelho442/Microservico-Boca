@@ -11,7 +11,7 @@
   - [Visualização](#Visualizacao)
 - [Funcionamento](#Funcionamento)
   - [API](#API)
-  - [Utilização](#Utilizacao)
+  - [Exemplos](#Exemplos)
 
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
 Consiste no desenvolvimento de parte de um microsserviço de back-end que permite a aplicações clientes (por ex., front-end ou Application Programming Interface client) gerenciar turmas e objetos de aprendizagem armazenados em um SGBD através de uma API REST. Este trabalho oportuniza a prática dos conhecimentos obtidos na disciplina com tecnologias atuais e em um sistema real, o ambiente BOCA (BOCA Online Contest Administrator), o qual é usado para gerenciar competições da Maratona de Programação da SBC e do Topcom, e, mais recentemente, como ferramenta de apoio em disciplinas de programação oferecidas pelo Departamento de Informática (DI) da Ufes.
@@ -115,7 +115,7 @@ A API desenvolvida foi construída utilizando o Flask em Python, um framework we
 <div align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/c4306ec5-cfcb-4af5-95c9-47ab9be87709" width=450></div>
 O código responsável pelo gerenciamento das URLs está organizado no arquivo controller.py, onde ocorre a interação com o banco de dados e a definição das rotas. Além disso, encontramos mais dois arquivos: run.py, encarregado de iniciar a API, rodando o codigo do controller via flask, e manufactures_connection, que realiza a conexão e configuração do banco de dados por meio das variáveis de ambiente.
 
-### <a name=“Utilizacao”><a/>Utilização 
+### <a name=“Exemplos”><a/>Exemplos 
 
 Para utilizar a API, você pode empregar ferramentas como o Postman, uma plataforma de colaboração para o desenvolvimento de APIs, ou desenvolver um código em Python para realizar as requisições. No repositório, você encontrará um arquivo **teste.py** com exemplos de requisições para a API.
 
