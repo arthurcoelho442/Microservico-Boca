@@ -95,13 +95,13 @@ com esta tabela é possivel relacionar a coluna name da tag com o respectivo nam
 
 foram desenvolvidas ao todo 5 urls dinamicas como vistas logo abaixo:
 
-| Endpoint                                                     | Método  | Funcionalidade                                              |
-| ---------------------------------------------                | ------  | -----------------------------------------------------       |
-| localhost:4040/api/**entityType**/**entityId**/tag           | GET     | Lista as tags associadas à competição dada pelo id_c        |
-| localhost:4040/api/**entityType**/**entityId**/tag           | POST    | Cadastra uma nova tag associada à competição dada pelo id_c |
-| localhost:4040/api/**entityType**/**entityId**/tag/**tagId** | GET     | Mostra a tag dada pelo id_t no contest id_c                 |
-| localhost:4040/api/**entityType**/**entityId**/tag/**tagId** | PUT     | Atualiza a tag dada pelo id_t no contest id_c               |
-| localhost:4040/api/**entityType**/**entityId**/tag/**tagId** | DELETE  | Remove a tag dada pelo id_t no contest id_c                 |
+| Endpoint                                                           | Método  | Funcionalidade                                              |
+| -------------------------------------------------------------------| ------  | -----------------------------------------------------       |
+| localhost:4040/api/**`entityType`**/**`entityId`**/tag             | GET     | Lista as tags associadas à competição dada pelo id_c        |
+| localhost:4040/api/**`entityType`**/**`entityId`**/tag             | POST    | Cadastra uma nova tag associada à competição dada pelo id_c |
+| localhost:4040/api/**`entityType`**/**`entityId`**/tag/**`tagId`** | GET     | Mostra a tag dada pelo id_t no contest id_c                 |
+| localhost:4040/api/**`entityType`**/**`entityId`**/tag/**`tagId`** | PUT     | Atualiza a tag dada pelo id_t no contest id_c               |
+| localhost:4040/api/**`entityType`**/**`entityId`**/tag/**`tagId`** | DELETE  | Remove a tag dada pelo id_t no contest id_c                 |
 
 Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId` e `tagId`.
 
