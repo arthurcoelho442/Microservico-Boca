@@ -89,7 +89,7 @@ Foi elaborado um conjunto de urls a fim de se fazer a manipulação das tags, a 
 
 Contudo foi desenvolvida a seguinte tabela: 
 
-<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/54479ee9-e14d-45ed-9508-a2160d2e862a" width=600> </div>
+<div Align="center"><img src="https://github.com/arthurcoelho442/Microservico-Boca/assets/56831082/54479ee9-e14d-45ed-9508-a2160d2e862a" width=200> </div>
 
 # Autores
 | [<img src="https://avatars.githubusercontent.com/u/56831082?v=4" width=115><br><sub>Arthur Coelho Estevão</sub>](https://github.com/arthurcoelho442) |  [<img src="https://avatars.githubusercontent.com/u/56406192?v=4" width=115><br><sub>Milena da Silva Mantovanelli</sub>](https://github.com/Milena0899) |
