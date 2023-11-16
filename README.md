@@ -7,7 +7,7 @@
 - [Objetivo do Trabalho](#Objetivo-do-Trabalho)
 - [Mode de Execucao](#Mode-de-Execucao)
   - [Configuração](#Configuracao)
-  - [Execução](#Execucao)
+  - [Execução](#Execução)
   - [Visualização](#Visualizacao)
 - [Funcionamento](#Funcionamento)
   - [API](#API)
@@ -25,7 +25,7 @@ No diretório raiz do repositório, acesse o arquivo **.env**
 
 Neste arquivo, temos a configuração das portas em que os contêineres serão executados. Certifique-se de parar os contêineres do seu computador ou trocar as portas de acordo com a sua necessidade.
 
-### <a name=“Execucao”><a/>Execucao
+### <a name=“Execução”><a/>Execução
 > **Windows**
 
 **Intale o pip**
