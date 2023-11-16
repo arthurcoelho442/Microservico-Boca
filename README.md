@@ -5,7 +5,7 @@
 
 # Sumario
 - [Objetivo do Trabalho](#Objetivo-do-Trabalho)
-- [Mode de Execucao](#Mode-de-Execucao)
+- [Mode de Execução](#Mode-de-Execução)
   - [Configuração](#Configuração)
   - [Execução](#Execução)
   - [Visualização](#Visualizção)
@@ -16,7 +16,7 @@
 # <a name=“Objetivo-do-Trabalho”><a/>Objetivo do Trabalho
 Consiste no desenvolvimento de parte de um microsserviço de back-end que permite a aplicações clientes (por ex., front-end ou Application Programming Interface client) gerenciar turmas e objetos de aprendizagem armazenados em um SGBD através de uma API REST. Este trabalho oportuniza a prática dos conhecimentos obtidos na disciplina com tecnologias atuais e em um sistema real, o ambiente BOCA (BOCA Online Contest Administrator), o qual é usado para gerenciar competições da Maratona de Programação da SBC e do Topcom, e, mais recentemente, como ferramenta de apoio em disciplinas de programação oferecidas pelo Departamento de Informática (DI) da Ufes.
 
-# <a name=“Mode-de-Execucao”><a/>Mode de Execução
+# <a name=“Mode-de-Execução”><a/>Mode de Execução
 
 ### <a name=“Configuração”><a/>Configuração
 No diretório raiz do repositório, acesse o arquivo **.env**
