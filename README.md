@@ -105,7 +105,7 @@ Na tabela a acima, encontramos três campos dinâmicos: `entityType`, `entityId`
 
 - `entityType`: Refere-se à entidade/tabela à qual a tag está associada. Por exemplo, se entityType for "user", isso se relaciona com a tabela usertable, que é a tabela referente aos usuários do sistema.
 
-- `entityId`: Representa o ID da tupla na tabela da entidade. Por exemplo, se entityId for 2, está referenciando o usuário cadastrado na tabela usertable com usernumber igual a 2.
+- `entityId`: Representa o ID da tupla na tabela da entidade. Por exemplo, se a entityType é user e o  entityId for 2, está referenciando o usuário cadastrado na tabela usertable com usernumber igual a 2.
 
 - `tagId`: Faz referência a uma tag na tabela tagtable.
 
