@@ -6,9 +6,9 @@
 # Sumario
 - [Objetivo do Trabalho](#Objetivo-do-Trabalho)
 - [Mode de Execucao](#Mode-de-Execucao)
-  - [Configuração](#Configuracao)
+  - [Configuração](#Configuração)
   - [Execução](#Execução)
-  - [Visualização](#Visualizacao)
+  - [Visualização](#Visualizção)
 - [Funcionamento](#Funcionamento)
   - [API](#API)
   - [Exemplos](#Exemplos)
@@ -18,7 +18,7 @@ Consiste no desenvolvimento de parte de um microsserviço de back-end que permit
 
 # <a name=“Mode-de-Execucao”><a/>Mode de Execução
 
-### <a name=“Configuracao”><a/>Configuracao
+### <a name=“Configuração”><a/>Configuração
 No diretório raiz do repositório, acesse o arquivo **.env**
 
 <div><img src="https://private-user-images.githubusercontent.com/56831082/283268851-7d5d1d91-30d5-4243-a67b-0cefc2507b23.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDAxMDMwMzksIm5iZiI6MTcwMDEwMjczOSwicGF0aCI6Ii81NjgzMTA4Mi8yODMyNjg4NTEtN2Q1ZDFkOTEtMzBkNS00MjQzLWE2N2ItMGNlZmMyNTA3YjIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTE2VDAyNDUzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWVmNGE2MTVmM2ZkMWM1YTcxMmM4Y2UxM2I3YzIyZTFjNjVmNWJjZDQyMzFkM2RjNWU4NTg2ODRjNjY3MmYzNmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.oxJognLWc4Zps74D_tzyqa32sXIMSit56qphP-sMONk" width=250> </div>
@@ -56,7 +56,7 @@ Caso prefira, execute o comando diretamente
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml -f docker-compose.api.yml up -d --build
 ```
 
-### <a name=“Visualizacao”><a/>Visualizacao
+### <a name=“Visualizção”><a/>Visualizção
 Para visualização do banco de dados, foi utilizado ao invés do Adminer, o pgAdmin, que é uma ferramenta gráfica de administração para o banco de dados PostgreSQL. Ele oferece uma interface visual para gerenciar e interagir com o PostgreSQL, incluindo recursos como navegação em árvore, edição SQL, gerenciamento de usuários e monitoramento de desempenho.
 
 Para iniciar o pgAdmin, acesse a URL **localhost:5050** e faça o acesso com as credenciais abaixo:
