@@ -1,7 +1,6 @@
 # from flask_restplus import Namespace
 from flask import Flask, jsonify, request
 from classes.manufactures_connection import *
-import requests
 
 querry      = []
 
