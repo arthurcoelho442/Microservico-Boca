@@ -1,4 +1,0 @@
-# database configuration
-# privileged boca user
-POSTGRES_USER=superuser
-POSTGRES_PASSWORD=superpass
